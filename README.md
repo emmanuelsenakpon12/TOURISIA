@@ -85,16 +85,20 @@ Lancer Apache et MySQL via le panneau XAMPP
 http://localhost/TOURISIA/api/public/index.php/api/
 
 ### Principaux Endpoints API
-Méthode	Endpoint	.........................Description	.....................Authentification
-POST	/api/register........................Inscription utilisateur	.........Non
-POST	/api/login	.........................Connexion utilisateur (JWT).......Non	
-GET	/api/offers	...........................Lister les offres................	Non
-POST	/api/offers........................	Créer une offre (prestataire)	.....OUI 
-POST	/api/reservations	..................Créer une réservation	.............OUI 
-GET	/api/user/reservations	..............Voir mes réservations	.............OUI 
-POST	/api/payments	......................Effectuer un paiement	.............OUI 
-GET	/api/admin/users	.................Lister les utilisateurs (admin)	.....OUI  (admin)
-POST	/api/admin/users/toggle	........Activer/Désactiver un utilisateur	.....OUI  (admin)
+## 📡 Principaux Endpoints API
+
+| Méthode | Endpoint                           | Description                          | Authentification |
+|---------|------------------------------------|--------------------------------------|------------------|
+| POST    | `/api/register`                    | Inscription utilisateur              | Non              |
+| POST    | `/api/login`                       | Connexion utilisateur (JWT)          | Non              |
+| GET     | `/api/offers`                      | Lister les offres                    | Non              |
+| POST    | `/api/offers`                      | Créer une offre (prestataire)        | Oui              |
+| POST    | `/api/reservations`                | Créer une réservation                | Oui              |
+| GET     | `/api/user/reservations`           | Voir mes réservations                | Oui              |
+| POST    | `/api/payments`                    | Effectuer un paiement                | Oui              |
+| GET     | `/api/admin/users`                 | Lister les utilisateurs (admin)      | Oui (admin)      |
+| POST    | `/api/admin/users/toggle`          | Activer/Désactiver un utilisateur    | Oui (admin)      |
+
 
 ## Authentification JWT
 Lors de la connexion (/api/login), un token JWT est retourné.
